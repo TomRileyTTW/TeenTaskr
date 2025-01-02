@@ -6,12 +6,15 @@
     <title>Teen Taskr</title>
     
     <!-- Favicon Links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="theme-color" content="#4CAF50">
 
+    <!-- Styles -->
     <style>
         * {
             margin: 0;
@@ -22,6 +25,18 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+        }
+
+        /* Beta Banner Styles */
+        .beta-banner {
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            position: relative;
+            z-index: 1000;
         }
 
         header {
@@ -85,11 +100,18 @@
     </style>
 </head>
 <body>
+    <!-- Beta Banner -->
+    <div class="beta-banner">
+        Beta Version: Features are in development. Your feedback is welcome!
+    </div>
+
+    <!-- Header Section -->
     <header>
         <h1>Teen Taskr</h1>
         <p>Connecting Westport Families and Teens for Local Services</p>
     </header>
 
+    <!-- Navigation Menu -->
     <nav>
         <a href="#how-it-works">How It Works</a>
         <a href="#about-us">About Us</a>
@@ -97,17 +119,20 @@
         <a href="#contact">Contact Us</a>
     </nav>
 
+    <!-- How It Works Section -->
     <section id="how-it-works">
         <h2>How It Works</h2>
         <p><strong>For parents:</strong> Find trustworthy local teens for babysitting, tutoring, and more.</p>
         <p><strong>For teens:</strong> Easily sign up and get matched with job opportunities that suit your schedule.</p>
     </section>
 
+    <!-- About Us Section -->
     <section id="about-us">
         <h2>About Us</h2>
         <p>We’re a group of local students with a vision to make life easier for Westport families while fostering a stronger sense of community.</p>
     </section>
 
+    <!-- Get Involved Section -->
     <section id="get-involved">
         <h2>Get Involved</h2>
         <p>Sign up for updates and be the first to know about our app launch!</p>
@@ -117,6 +142,7 @@
         </form>
     </section>
 
+    <!-- Contact Us Section -->
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Have questions or want to collaborate? Reach out to us!</p>
@@ -127,6 +153,7 @@
         </form>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Teen Taskr. All rights reserved.</p>
     </footer>
