@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teen Tasker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            background-color: #f4f4f4;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .cta button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea, form button {
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Teen Tasker</h1>
+        <p>Connecting Westport Families and Teens for Local Services</p>
+    </header>
+
+<div style="background-color: #ffcc00; color: #333; text-align: center; padding: 0.5em; font-size: 1em;">
+    🚧 This website is currently in beta. Some features may be incomplete or under development. We appreciate your feedback! 🚧
+</div>
+
+    <nav>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about-us">About Us</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>For parents: Find trustworthy local teens for babysitting, tutoring, and more.</p>
+        <p>For teens: Easily sign up and get matched with job opportunities that suit your schedule.</p>
+    </section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>We’re a group of local students with a vision to make life easier for Westport families while fostering a stronger sense of community.</p>
+    </section>
+
+    <section id="get-involved">
+        <h2>Get Involved</h2>
+        <p>Sign up for updates and be the first to know about our app launch!</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to collaborate? Reach out to us!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Teen Tasker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
