@@ -3,19 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teen Taskr</title>
+    <title>Teen Taskr - Beta Preview</title>
 
     <!-- Favicon setup -->
     <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e0f7fa, #e1bee7);
+            color: #333;
+        }
+
+        header {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        .banner {
+            background: #ffeb3b;
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #03a9f4;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #6200ea;
+        }
+
+        footer {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #3700b3;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Teen Taskr</h1>
         <p>Connecting Westport Families and Teens for Local Services</p>
     </header>
+
+    <div class="banner">
+        🚧 This website is in Beta. Enjoy this preview! 🚧
+    </div>
 
     <nav>
         <ul>
@@ -31,6 +134,7 @@
             <h2>How It Works</h2>
             <p><strong>For parents:</strong> Find trustworthy local teens for babysitting, tutoring, and more.</p>
             <p><strong>For teens:</strong> Easily sign up and get matched with job opportunities that suit your schedule.</p>
+            <button onclick="alert('Thank you for your interest! Sign-up feature coming soon!')">Learn More</button>
         </section>
 
         <section id="about-us">
@@ -42,8 +146,8 @@
             <h2>Get Involved</h2>
             <p>Sign up for updates and be the first to know about our app launch!</p>
             <form action="#" method="post">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required style="padding: 10px; width: 80%; max-width: 300px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;"><br>
                 <button type="submit">Sign Up</button>
             </form>
         </section>
@@ -51,9 +155,9 @@
         <section id="contact-us">
             <h2>Contact Us</h2>
             <p>Have questions or want to collaborate? Reach out to us!</p>
-            <ul>
-                <li>Email: tr1006603@gmail.com</li>
-                <li>Phone: (203) 564 4646</li>
+            <ul style="list-style: none; padding: 0;">
+                <li>Email: <a href="mailto:contact@teentaskr.com">contact@teentaskr.com</a></li>
+                <li>Phone: (123) 456-7890</li>
             </ul>
         </section>
     </main>
