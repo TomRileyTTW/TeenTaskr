@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Teen Taskr</title>
+    <title>Teen Taskr</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,20 +37,6 @@
             padding: 2rem;
         }
 
-        .cta {
-            text-align: center;
-            margin: 2rem 0;
-        }
-
-        .cta button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
         footer {
             background-color: #333;
             color: white;
@@ -82,13 +68,9 @@
 </head>
 <body>
     <header>
-        <h1> Teen Taskr</h1>
+        <h1>Teen Taskr</h1>
         <p>Connecting Westport Families and Teens for Local Services</p>
     </header>
-
-<div style="background-color: #ffcc00; color: #333; text-align: center; padding: 0.5em; font-size: 1em;">
-    🚧 This website is currently in beta. Some features may be incomplete or under development. We appreciate your feedback! 🚧
-</div>
 
     <nav>
         <a href="#how-it-works">How It Works</a>
@@ -111,8 +93,8 @@
     <section id="get-involved">
         <h2>Get Involved</h2>
         <p>Sign up for updates and be the first to know about our app launch!</p>
-        <form>
-            <input type="email" placeholder="Enter your email" required>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required>
             <button type="submit">Sign Up</button>
         </form>
     </section>
@@ -120,10 +102,9 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Have questions or want to collaborate? Reach out to us!</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
@@ -133,3 +114,4 @@
     </footer>
 </body>
 </html>
+
