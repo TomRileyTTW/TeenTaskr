@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teen Taskr - Beta </title>
+    <title>Teen Taskr - Beta Preview</title>
 
     <!-- Favicon setup -->
     <link rel="icon" type="image/png" href="favicon.png">
@@ -14,12 +14,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #e0f7fa, #e1bee7);
-            color: #333;
+            background: white;
+            color: navy;
         }
 
         header {
-            background-color: #6200ea;
+            background-color: navy;
             color: white;
             text-align: center;
             padding: 20px 10px;
@@ -36,15 +36,16 @@
         }
 
         .banner {
-            background: #ffeb3b;
-            color: #000;
+            background: white;
+            color: navy;
             text-align: center;
             padding: 10px 0;
             font-weight: bold;
+            border: 2px solid navy;
         }
 
         nav {
-            background-color: #03a9f4;
+            background-color: navy;
             display: flex;
             justify-content: center;
             padding: 10px 0;
@@ -80,23 +81,23 @@
             margin: 20px 0;
             padding: 20px;
             background: white;
+            border: 2px solid navy;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         section h2 {
-            color: #6200ea;
+            color: navy;
         }
 
         footer {
-            background-color: #6200ea;
+            background-color: navy;
             color: white;
             text-align: center;
             padding: 10px 0;
         }
 
         button {
-            background-color: #6200ea;
+            background-color: navy;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -106,7 +107,18 @@
         }
 
         button:hover {
-            background-color: #3700b3;
+            background-color: white;
+            color: navy;
+            border: 2px solid navy;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px 0;
+            border: 2px solid navy;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -117,7 +129,7 @@
     </header>
 
     <div class="banner">
-        🚧 This website is in Beta. Enjoy this brief overview! 🚧
+        🚧 This website is in Beta. Enjoy this preview! 🚧
     </div>
 
     <nav>
@@ -145,9 +157,9 @@
         <section id="get-involved">
             <h2>Get Involved</h2>
             <p>Sign up for updates and be the first to know about our app launch!</p>
-            <form action="#" method="post">
+            <form action="https://formspree.io/f/xwppwpko" method="POST">
                 <label for="email">Your Email:</label><br>
-                <input type="email" id="email" name="email" required style="padding: 10px; width: 80%; max-width: 300px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;"><br>
+                <input type="email" id="email" name="email" required><br>
                 <button type="submit">Sign Up</button>
             </form>
         </section>
@@ -156,8 +168,8 @@
             <h2>Contact Us</h2>
             <p>Have questions or want to collaborate? Reach out to us!</p>
             <ul style="list-style: none; padding: 0;">
-                <li>Email: <a href="tr1006603@gmail.com">contact@teentaskr.com</a></li>
-                <li>Phone: (203) 564 4646</li>
+                <li>Email: <a href="mailto:contact@teentaskr.com">contact@teentaskr.com</a></li>
+                <li>Phone: (123) 456-7890</li>
             </ul>
         </section>
     </main>
