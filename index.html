@@ -15,47 +15,63 @@
     <!-- Stylesheet -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Georgia, serif; /* Changed font to Georgia */
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background: white;
+            color: #0a1d37; /* Dark navy */
         }
 
-        /* Header */
         header {
-            background-color: #0a1d37; /* Navy */
+            background-color: #0a1d37; /* Dark navy */
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
             text-align: center;
+            padding: 20px 10px;
         }
 
-        header .slogan-left,
-        header .slogan-right {
-            font-size: 1.2rem;
-            margin: 0 15px;
-        }
-
-        header .slogan-left {
-            text-align: right;
-            flex: 1;
-        }
-
-        header .slogan-right {
-            text-align: left;
-            flex: 1;
+        header h1 {
+            margin: 0;
+            font-size: 2rem; /* Header title font size */
         }
 
         header img {
-            width: 150px; /* Logo size */
+            width: 250px; /* Logo size */
+            max-width: 100%; /* Responsive for smaller screens */
             height: auto; /* Maintain aspect ratio */
+            margin: 0 20px; /* Spacing around the logo */
         }
 
-        /* Navigation */
+        .slogan {
+            font-size: 1.2rem;
+            margin: 0;
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .slogan-left {
+            margin-right: 20px;
+            text-align: right;
+        }
+
+        .slogan-right {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .banner {
+            background: white;
+            color: #0a1d37; /* Dark navy */
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            border: 2px solid #0a1d37;
+        }
+
         nav {
-            background-color: #0a1d37; /* Navy */
+            background-color: #0a1d37; /* Dark navy */
             display: flex;
             justify-content: center;
             padding: 10px 0;
@@ -69,76 +85,127 @@
         }
 
         nav li {
-            margin: 0 20px;
+            margin: 0 15px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1rem; /* Navigation link font size */
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        /* Main Content */
         main {
             padding: 20px;
+            text-align: center;
         }
 
         section {
             margin: 20px 0;
             padding: 20px;
             background: white;
-            border: 2px solid #0a1d37; /* Navy */
+            border: 2px solid #0a1d37; /* Dark navy */
             border-radius: 8px;
         }
 
+        section h2 {
+            color: #0a1d37; /* Dark navy */
+        }
+
         footer {
-            background-color: #0a1d37; /* Navy */
+            background-color: #0a1d37; /* Dark navy */
             color: white;
             text-align: center;
             padding: 10px 0;
         }
+
+        button {
+            background-color: #0a1d37; /* Dark navy */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #0a1d37; /* Dark navy */
+            border: 2px solid #0a1d37;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px 0;
+            border: 2px solid #0a1d37; /* Dark navy */
+            border-radius: 4px;
+        }
+
+        ul.contact-list {
+            list-style: none;
+            padding: 0;
+        }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="slogan-left">Empowering Teens, Supporting Communities</div>
+        <div class="slogan slogan-left">Empowering Teens, Supporting Communities</div>
         <img src="android-chrome-512x512.png" alt="Teen Taskr Logo">
-        <div class="slogan-right">Connecting Families, Building Futures</div>
+        <div class="slogan slogan-right">Connecting Families, Building Futures</div>
     </header>
 
-    <!-- Navigation -->
+    <div class="banner">
+        🚧 This website is in Beta. Enjoy this preview! 🚧
+    </div>
+
     <nav>
         <ul>
-            <li><a href="#general">General</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about-us">About Us</a></li>
             <li><a href="#get-involved">Get Involved</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
     <main>
-        <section>
-            <h2>Welcome to Teen Taskr</h2>
-            <p>
-                Teen Taskr connects local families and teens, offering a platform for teens to find job opportunities and for families to access reliable services. We aim to foster a stronger community while helping teens grow through real-world experiences.
-            </p>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p><strong>For Westporters:</strong> Find trustworthy local teens for babysitting, tutoring, and more.</p>
+            <p><strong>For teens:</strong> Easily sign up and get matched with job opportunities that suit your schedule.</p>
+            <button onclick="alert('Thank you for your interest! Sign-up feature coming soon!')">Learn More</button>
         </section>
 
-        <section>
-            <h2>Our Services</h2>
-            <p>
-                Find trustworthy teens for babysitting, tutoring, yard work, and more. Teens can sign up to get matched with job opportunities that fit their skills and availability.
-            </p>
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>We’re a group of local students with a vision to make life easier for Westporters while fostering a stronger sense of community.</p>
+        </section>
+
+        <section id="get-involved">
+            <h2>Get Involved</h2>
+            <p>Sign up for updates and be the first to know about our app launch!</p>
+            <form action="https://formspree.io/f/xwppwpko" method="POST">
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to collaborate? Reach out to us!</p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:tr1006603@gmail.com">tr1006603@gmail.com</a></li>
+                <li>Phone: (203) 564 4646</li>
+            </ul>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Teen Taskr. All rights reserved.</p>
     </footer>
