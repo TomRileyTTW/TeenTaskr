@@ -3,9 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teen Taskr</title>
-    <link rel="stylesheet" href="style.css"> <!-- Shared stylesheet -->
+    <title>Teen Taskr - Beta Preview</title>
+
+    <!-- Favicon setup -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Stylesheet -->
+    <style>
+        body {
+            font-family: Georgia, serif; /* Changed font to Georgia */
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: #0a1d37; /* Dark navy */
+        }
+
+        header {
+            background-color: #0a1d37; /* Dark navy */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem; /* Header title font size */
+        }
+
+        header img {
+            width: 250px; /* Logo size */
+            max-width: 100%; /* Responsive for smaller screens */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 20px; /* Spacing around the logo */
+        }
+
+        .slogan {
+            font-size: 1.2rem;
+            margin: 0;
+            max-width: 200px;
+            text-align: center;
+            padding: 10px;
+            border: 3px solid white; /* Thick white border */
+            border-radius: 8px; /* Optional: Rounded corners */
+            background-color: #0a1d37; /* Navy background for contrast */
+        }
+
+        .slogan-left {
+            margin-right: 20px;
+            text-align: right;
+        }
+
+        .slogan-right {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .banner {
+            background: white;
+            color: #0a1d37; /* Dark navy */
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            border: 2px solid #0a1d37;
+        }
+
+        nav {
+            background-color: #0a1d37; /* Dark navy */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem; /* Navigation link font size */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border: 2px solid #0a1d37; /* Dark navy */
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #0a1d37; /* Dark navy */
+        }
+
+        footer {
+            background-color: #0a1d37; /* Dark navy */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        button {
+            background-color: #0a1d37; /* Dark navy */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #0a1d37; /* Dark navy */
+            border: 2px solid #0a1d37;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px 0;
+            border: 2px solid #0a1d37; /* Dark navy */
+            border-radius: 4px;
+        }
+
+        ul.contact-list {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,150 +170,39 @@
 
     <nav>
         <ul>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="get-involved.html">Get Involved</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#get-involved">Get Involved</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
-            <h2>Welcome to Teen Taskr</h2>
-            <p>Your go-to platform for connecting local teens with families in need of services like babysitting, tutoring, and more!</p>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p><strong>For Westporters:</strong> Find trustworthy local teens for babysitting, tutoring, and more.</p>
+            <p><strong>For teens:</strong> Easily sign up and get matched with job opportunities that suit your schedule.</p>
+            <button onclick="alert('Thank you for your interest! Sign-up feature coming soon!')">Learn More</button>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>We’re a group of local students with a vision to make life easier for Westporters while fostering a stronger sense of community.</p>
         </section>
 
         <section id="get-involved">
-            <h2>Sign Up</h2>
+            <h2>Get Involved</h2>
+            <p>Sign up for updates and be the first to know about our app launch!</p>
             <form action="https://formspree.io/f/xwppwpko" method="POST">
                 <label for="email">Your Email:</label><br>
                 <input type="email" id="email" name="email" required><br>
                 <button type="submit">Sign Up</button>
             </form>
         </section>
-    </main>
 
-    <footer>
         <section id="contact-us">
             <h2>Contact Us</h2>
-            <ul class="contact-list">
-                <li>Email: <a href="mailto:tr1006603@gmail.com">tr1006603@gmail.com</a></li>
-                <li>Phone: (203) 564 4646</li>
-            </ul>
-        </section>
-        <p>&copy; 2025 Teen Taskr. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-<!-- how-it-works.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>How It Works</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>For Westporters</h2>
-            <p>Find trustworthy local teens for babysitting, tutoring, and more.</p>
-        </section>
-
-        <section>
-            <h2>For Teens</h2>
-            <p>Easily sign up and get matched with job opportunities that suit your schedule.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Teen Taskr. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-<!-- about-us.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>About Us</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Our Vision</h2>
-            <p>We’re a group of local students with a vision to make life easier for Westporters while fostering a stronger sense of community.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Teen Taskr. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-<!-- get-involved.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Involved</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Get Involved</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Join Us</h2>
-            <p>Sign up to be part of our growing community and get exclusive updates about our launch.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Teen Taskr. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-<!-- contact-us.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Reach Out</h2>
-            <p>We’re here to help. Drop us a message, and we’ll get back to you soon!</p>
-        </section>
-
-        <section>
-            <h2>Contact Information</h2>
+            <p>Have questions or want to collaborate? Reach out to us!</p>
             <ul class="contact-list">
                 <li>Email: <a href="mailto:tr1006603@gmail.com">tr1006603@gmail.com</a></li>
                 <li>Phone: (203) 564 4646</li>
