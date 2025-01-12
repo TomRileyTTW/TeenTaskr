@@ -1,164 +1,222 @@
+Share
+
+
+You said:
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SixOfSeparation°</title>
+    <title>Teen Taskr - Beta Preview</title>
+
+    <!-- Favicon setup -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Stylesheet -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Georgia, serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background: white;
+            color: #0a1d37; /* Dark navy */
         }
+
         header {
-            background-color: #6200ea;
+            background-color: #0a1d37; /* Dark navy */
             color: white;
-            padding: 1em 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header img {
+            width: 300px; /* Larger logo size */
+            max-width: 100%;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        .slogan {
+            font-size: 1.2rem;
+            margin: 0;
+            max-width: 200px;
+            text-align: center;
+            padding: 10px;
+            border: 3px solid white;
+            border-radius: 8px;
+            background-color: #0a1d37; /* Navy background for contrast */
+        }
+
+        .slogan-left {
+            margin-right: 20px;
+            text-align: right;
+        }
+
+        .slogan-right {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .banner {
+            background: white;
+            color: #0a1d37; /* Dark navy */
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            border: 2px solid #0a1d37;
+        }
+
+        nav {
+            background-color: #0a1d37; /* Dark navy */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
             text-align: center;
         }
-        form {
-            max-width: 600px;
-            margin: 2em auto;
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
             background: white;
-            padding: 2em;
+            border: 2px solid #0a1d37;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        label {
-            display: block;
-            margin-bottom: 0.5em;
-            font-weight: bold;
+
+        section h2 {
+            color: #0a1d37;
         }
-        input, select, button, textarea {
-            width: 100%;
-            padding: 0.8em;
-            margin-bottom: 1em;
-            border: 1px solid #ccc;
+
+        footer {
+            background-color: #0a1d37;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        button {
+            background-color: #0a1d37;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #0a1d37;
+            border: 2px solid #0a1d37;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px 0;
+            border: 2px solid #0a1d37;
             border-radius: 4px;
         }
-        button {
-            background-color: #6200ea;
-            color: white;
-            font-size: 1em;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #5b00d1;
-        }
-        .matches {
-            max-width: 600px;
-            margin: 2em auto;
-            background: white;
-            padding: 2em;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .match {
-            padding: 1em;
-            border-bottom: 1px solid #ddd;
-        }
-        .match:last-child {
-            border-bottom: none;
+
+        ul.contact-list {
+            list-style: none;
+            padding: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>SixOfSeparation°</h1>
-        <p>Connect instantly with people who share your interests and passions!</p>
+        <div class="slogan slogan-left">Empowering Teens, Supporting Communities</div>
+        <img src="android-chrome-512x512.png" alt="Teen Taskr Logo">
+        <div class="slogan slogan-right">Connecting Westporters, Building Futures</div>
     </header>
 
-    <form id="signupForm">
-        <h2>Sign Up</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <div class="banner">
+        🚧 This website is in Beta. Enjoy this preview! 🚧
+    </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <nav>
+        <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#get-involved">Get Involved</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
 
-        <label for="location">Location:</label>
-        <input type="text" id="location" name="location" required>
+    <main>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p><strong>For Westporters:</strong> Find trustworthy local teens for babysitting, tutoring, and more.</p>
+            <p><strong>For teens:</strong> Easily sign up and get matched with job opportunities that suit your schedule.</p>
+            <button onclick="window.location.href='https://docs.google.com/document/d/1uDUt5QeT-9Dr_PIYCTy35DGgooE_EdOCCcsj7eekTMo/edit?usp=sharing';">Learn More</button>
+        </section>
 
-        <label for="interests">Interests:</label>
-        <textarea id="interests" name="interests" rows="4" placeholder="e.g., hiking, photography, coding"></textarea>
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>We’re a group of local students with a vision to make life easier for Westporters while fostering a stronger sense of community.</p>
+        </section>
 
-        <label for="involvement">Involvement:</label>
-        <textarea id="involvement" name="involvement" rows="4" placeholder="e.g., local sports teams, community groups"></textarea>
+        <section id="get-involved">
+            <h2>Get Involved</h2>
+            <p>Sign up for updates and be the first to know about our app launch!</p>
+            <form action="https://formspree.io/f/xwppwpko" method="POST">
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
 
-        <button type="submit">Connect Me</button>
-    </form>
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to collaborate? Reach out to us!</p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:tr1006603@gmail.com">tr1006603@gmail.com</a></li>
+                <li>Phone: (203) 564 4646</li>
+            </ul>
+        </section>
+    </main>
 
-    <section class="matches" id="matches" style="display: none;">
-        <h2>People You May Connect With:</h2>
-        <div id="matchList"></div>
-    </section>
-
-    <script>
-        const form = document.getElementById('signupForm');
-        const matchesSection = document.getElementById('matches');
-        const matchList = document.getElementById('matchList');
-
-        const mockDatabase = [
-            {
-                name: 'Alice',
-                location: 'New York',
-                interests: ['hiking', 'coding'],
-                involvement: ['local sports teams']
-            },
-            {
-                name: 'Bob',
-                location: 'San Francisco',
-                interests: ['photography', 'gaming'],
-                involvement: ['community groups']
-            },
-            {
-                name: 'Charlie',
-                location: 'New York',
-                interests: ['hiking', 'photography'],
-                involvement: ['volunteer work']
-            }
-        ];
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const user = {
-                name: formData.get('name'),
-                location: formData.get('location'),
-                interests: formData.get('interests').split(',').map(i => i.trim().toLowerCase()),
-                involvement: formData.get('involvement').split(',').map(i => i.trim().toLowerCase())
-            };
-
-            const matches = mockDatabase.filter(person =>
-                person.location.toLowerCase() === user.location.toLowerCase() &&
-                person.interests.some(interest => user.interests.includes(interest))
-            );
-
-            displayMatches(matches);
-        });
-
-        function displayMatches(matches) {
-            matchList.innerHTML = '';
-            if (matches.length === 0) {
-                matchList.innerHTML = '<p>No matches found. Try adding more interests or changing your location!</p>';
-            } else {
-                matches.forEach(match => {
-                    const matchDiv = document.createElement('div');
-                    matchDiv.classList.add('match');
-                    matchDiv.innerHTML = `
-                        <h3>${match.name}</h3>
-                        <p><strong>Location:</strong> ${match.location}</p>
-                        <p><strong>Interests:</strong> ${match.interests.join(', ')}</p>
-                        <p><strong>Involvement:</strong> ${match.involvement.join(', ')}</p>
-                    `;
-                    matchList.appendChild(matchDiv);
-                });
-            }
-            matchesSection.style.display = 'block';
-        }
-    </script>
+    <footer>
+        <p>&copy; 2025 Teen Taskr. All rights reserved.</p>
+    </footer>
 </body>
 </html>
