@@ -26,11 +26,18 @@
         header {
             background-color: #0a1d37; /* Dark navy */
             color: white;
+            text-align: center;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
-            padding: 20px 10px;
+            justify-content: center;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
         }
 
         .signup-button {
@@ -49,46 +56,16 @@
             color: white;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-
-        header img {
-            width: 300px; /* Larger logo size */
-            max-width: 100%;
-            height: auto;
-            margin: 0 20px;
-        }
-
         .slogan {
             font-size: 1.2rem;
-            margin: 0;
-            max-width: 200px;
-            text-align: center;
+            margin: 10px 0;
             padding: 10px;
             border: 3px solid white;
             border-radius: 8px;
-            background-color: #0a1d37; /* Navy background for contrast */
-        }
-
-        .slogan-left {
-            margin-right: 20px;
-            text-align: right;
-        }
-
-        .slogan-right {
-            margin-left: 20px;
-            text-align: left;
-        }
-
-        .banner {
-            background: white;
-            color: #0a1d37; /* Dark navy */
+            background-color: #0a1d37;
+            color: white;
+            max-width: 300px;
             text-align: center;
-            padding: 10px 0;
-            font-weight: bold;
-            border: 2px solid #0a1d37;
         }
 
         nav {
@@ -178,11 +155,9 @@
     <header>
         <img src="android-chrome-512x512.png" alt="Teen Taskr Logo">
         <button class="signup-button" onclick="document.getElementById('get-involved').scrollIntoView({ behavior: 'smooth' });">Sign Up Early</button>
-        <div class="slogan slogan-left">Empowering Teens, Supporting Communities</div>
-        <div class="slogan slogan-right">Connecting Communities, Building Futures</div>
+        <div class="slogan">Empowering Teens, Supporting Communities</div>
+        <div class="slogan">Connecting Communities, Building Futures</div>
     </header>
-
-    
 
     <nav>
         <ul>
@@ -197,13 +172,13 @@
         <section id="how-it-works">
             <h2>How It Works</h2>
             <p><strong>For Customers:</strong> Find trustworthy local teens for babysitting, tutoring, and more.</p>
-            <p><strong>For teens:</strong> Easily sign up and get matched with job opportunities that suit your schedule.</p>
+            <p><strong>For Teens:</strong> Easily sign up and get matched with job opportunities that suit your schedule.</p>
             <button onclick="window.location.href='https://sites.google.com/view/teentaskr-learn-more?usp=sharing';">Learn More</button>
         </section>
 
         <section id="about-us">
             <h2>About Us</h2>
-            <p>We’re a group of local students with a vision to make life easier for customers while fostering a stronger sense of community.</p>
+            <p>We’re a group of local students with a vision to make life easier for customers, get teens a quick and easy job, and foster a stronger sense of community.</p>
             <button onclick="window.location.href='https://sites.google.com/view/teentaskrmore-about-us/home';">Learn More</button>
         </section>
 
