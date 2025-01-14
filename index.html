@@ -182,7 +182,7 @@
         <button class="signup-button" onclick="document.getElementById('get-involved').scrollIntoView({ behavior: 'smooth' });">Sign Up Early</button>
         <div class="slogan slogan-left">Empowering Teens, Supporting Communities</div>
         <img src="android-chrome-512x512.png" alt="Teen Taskr Logo">
-        <div class="slogan slogan-right">Connecting Customers, Building Futures</div>
+        <div class="slogan slogan-right">Connecting Communities, Building Futures</div>
     </header>
 
     <div class="banner">
@@ -216,8 +216,15 @@
             <h2>Sign Up</h2>
             <p>Sign up for updates and be the first to know about our app launch!</p>
             <form action="https://formspree.io/f/xwppwpko" method="POST">
+                <label for="first-name">First Name:</label><br>
+                <input type="text" id="first-name" name="first-name" required><br>
+
+                <label for="last-name">Last Name:</label><br>
+                <input type="text" id="last-name" name="last-name" required><br>
+
                 <label for="email">Your Email:</label><br>
                 <input type="email" id="email" name="email" required><br>
+
                 <button type="submit">Sign Up</button>
             </form>
         </section>
