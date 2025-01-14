@@ -31,6 +31,25 @@
             justify-content: center;
             text-align: center;
             padding: 20px 10px;
+            position: relative;
+        }
+
+        .signup-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: #0a1d37;
+            border: 2px solid #0a1d37;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .signup-button:hover {
+            background-color: #0a1d37;
+            color: white;
         }
 
         header h1 {
@@ -160,6 +179,7 @@
 </head>
 <body>
     <header>
+        <button class="signup-button" onclick="document.getElementById('get-involved').scrollIntoView({ behavior: 'smooth' });">Sign Up Early</button>
         <div class="slogan slogan-left">Empowering Teens, Supporting Communities</div>
         <img src="android-chrome-512x512.png" alt="Teen Taskr Logo">
         <div class="slogan slogan-right">Connecting Westporters, Building Futures</div>
