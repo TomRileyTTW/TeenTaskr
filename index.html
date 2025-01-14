@@ -27,17 +27,14 @@
             background-color: #0a1d37; /* Dark navy */
             color: white;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
             text-align: center;
             padding: 20px 10px;
-            position: relative;
         }
 
         .signup-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            margin-top: 10px;
             background-color: white;
             color: #0a1d37;
             border: 2px solid #0a1d37;
@@ -179,15 +176,13 @@
 </head>
 <body>
     <header>
+        <img src="android-chrome-512x512.png" alt="Teen Taskr Logo">
         <button class="signup-button" onclick="document.getElementById('get-involved').scrollIntoView({ behavior: 'smooth' });">Sign Up Early</button>
         <div class="slogan slogan-left">Empowering Teens, Supporting Communities</div>
-        <img src="android-chrome-512x512.png" alt="Teen Taskr Logo">
         <div class="slogan slogan-right">Connecting Communities, Building Futures</div>
     </header>
 
-    <div class="banner">
-        🚧 This website is in Beta. Enjoy this preview! 🚧
-    </div>
+    
 
     <nav>
         <ul>
