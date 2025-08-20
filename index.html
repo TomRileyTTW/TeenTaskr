@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teen Taskr - About Page</title>
+    <title>Teen Taskr - Home</title>
 
     <!-- Favicon setup -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -22,9 +22,8 @@
             background: white;
             color: #0a1d37; /* Dark navy */
         }
-
         header {
-            background-color: #0a1d37; /* Dark navy */
+            background-color: #0a1d37;
             color: white;
             display: flex;
             flex-direction: row;
@@ -32,115 +31,43 @@
             justify-content: center;
             padding: 20px;
         }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        header img {
-            width: 200px;
-            height: auto;
-        }
-
-        .signup-button {
-            background-color: white;
-            color: #0a1d37;
-            border: 2px solid #0a1d37;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            margin-top: 10px;
-        }
-
-        .signup-button:hover {
-            background-color: #0a1d37;
-            color: white;
-        }
-
+        .logo-container { display: flex; align-items: center; justify-content: center; }
+        header img { width: 200px; height: auto; }
         nav {
-            background-color: #0a1d37; /* Dark navy */
+            background-color: #0a1d37;
             display: flex;
             justify-content: center;
             padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav li {
-            margin: 0 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+        nav li { margin: 0 15px; }
+        nav a { color: white; text-decoration: none; font-size: 1rem; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; text-align: center; max-width: 960px; margin: 0 auto; }
         section {
-            margin: 20px 0;
-            padding: 20px;
-            background: white;
-            border: 2px solid #0a1d37;
-            border-radius: 8px;
+            margin: 20px 0; padding: 20px; background: white;
+            border: 2px solid #0a1d37; border-radius: 8px;
         }
-
-        section h2 {
-            color: #0a1d37;
+        section h2 { color: #0a1d37; }
+        .btn, button {
+            background-color: #0a1d37; color: white; border: none;
+            padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 1rem;
         }
-
-        footer {
-            background-color: #0a1d37;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        button {
-            background-color: #0a1d37;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        button:hover {
-            background-color: white;
-            color: #0a1d37;
-            border: 2px solid #0a1d37;
-        }
-
+        .btn:hover, button:hover { background-color: white; color: #0a1d37; border: 2px solid #0a1d37; }
         input {
-            padding: 10px;
-            width: 80%;
-            max-width: 300px;
-            margin: 10px 0;
-            border: 2px solid #0a1d37;
-            border-radius: 4px;
+            padding: 10px; width: 80%; max-width: 300px; margin: 10px 0;
+            border: 2px solid #0a1d37; border-radius: 4px;
         }
-
-        ul.contact-list {
-            list-style: none;
-            padding: 0;
+        ul.contact-list { list-style: none; padding: 0; }
+        footer {
+            background-color: #0a1d37; color: white; text-align: center; padding: 16px 8px;
         }
+        .footer-links { margin-top: 8px; font-size: 0.95rem; }
+        .footer-links a { color: #fff; text-decoration: underline; margin: 0 8px; }
+        .legal-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     </style>
 </head>
 <body>
@@ -156,6 +83,9 @@
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#get-involved">Sign Up Early</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
+            <!-- NEW: legal links in nav -->
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
         </ul>
     </nav>
 
@@ -195,13 +125,27 @@
             <p>Have questions or want to collaborate? Reach out to us!</p>
             <ul class="contact-list">
                 <li>Email: <a href="mailto:teentaskr@gmail.com">teentaskr@gmail.com</a></li>
-                <li>Phone: (203) 564 4646</li>
+                <li>Phone: <a href="tel:+12035644646">(203) 564-4646</a></li>
             </ul>
+        </section>
+
+        <!-- NEW: small legal section with links -->
+        <section id="legal">
+            <h2>Legal</h2>
+            <p>By using Teen Taskr, you agree to our Terms of Service and acknowledge our Privacy Policy.</p>
+            <div class="legal-links">
+                <a class="btn" href="terms.html">View Terms of Service</a>
+                <a class="btn" href="privacy.html">View Privacy Policy</a>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Teen Taskr. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="terms.html">Terms of Service</a> •
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
     </footer>
 </body>
 </html>
